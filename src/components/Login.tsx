@@ -84,16 +84,16 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
                 {/* Glass Effect Login Button */}
                 <div className="relative group">
                   {/* Animated gradient border for button */}
-                  <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 rounded-2xl blur opacity-60 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                  <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 rounded-2xl  group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
 
                   <button
                     type="submit"
                     disabled={!username.trim() || isLoading}
-                    className="relative w-full py-4 px-8 text-lg font-semibold text-white rounded-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 group"
+                    className="relative w-full py-4 px-8 text-lg font-semibold text-white rounded-2xl overflow-hidden transition-all duration-500 transform  disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 group"
                     style={{
                       background:
                         "linear-gradient(135deg, rgba(6, 182, 212, 0.15) 0%, rgba(59, 130, 246, 0.15) 50%, rgba(139, 92, 246, 0.15) 100%)",
-                      backdropFilter: "blur(20px)",
+
                       border: "1px solid rgba(6, 182, 212, 0.3)",
                       boxShadow:
                         "0 8px 32px rgba(6, 182, 212, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1)",

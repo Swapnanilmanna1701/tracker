@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import Login from './components/Login';
-import Dashboard from './components/Dashboard';
-import { storageUtils } from './utils/localStorage';
+import { useEffect, useState } from "react";
+import Dashboard from "./components/Dashboard";
+import Login from "./components/Login";
+import { storageUtils } from "./utils/localStorage";
 
 function App() {
   const [user, setUser] = useState<string | null>(null);
